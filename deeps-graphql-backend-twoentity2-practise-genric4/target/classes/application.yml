@@ -1,0 +1,14 @@
+graphql:
+      servlet:
+           mapping: /graphql/entity
+           enabled: true
+           corsEnabled: true
+spring:
+      datasource:
+        url: jdbc:mysql://localhost:3306/db_example
+        driverClassName: com.mysql.jdbc.Driver
+        username: ibmer
+        password: password
+      jpa:
+        show-sql: true
+        hibernate.ddl-auto: update

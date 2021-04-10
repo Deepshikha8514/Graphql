@@ -1,0 +1,28 @@
+type Book{
+	title: String
+	isbn: String 
+	authors: [Author]	
+}
+
+type Author{
+	id: String
+	name: String 
+	books: [Book]	
+}
+
+type Query{	
+	 
+     getAllAuthors:[Author]
+      getAllBooks:[Book]
+}
+
+
+input BookWrapper{
+	title: String
+	isbn: String
+}
+
+input AuthorWrapper{
+    id: String
+	name: String
+}
